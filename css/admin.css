@@ -1,0 +1,401 @@
+/* ==========================================================================
+   Sharjah Hotel Yaru - Admin Dashboard Stylesheet
+   ========================================================================== */
+
+.admin-wrapper {
+  min-height: 100vh;
+  background-color: #F3F4F6;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Admin Top Bar */
+.admin-topbar {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--color-gold);
+}
+
+.admin-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.admin-brand h1 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-gold);
+}
+
+.admin-user-badge {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.admin-user-details {
+  text-align: right;
+  line-height: 1.2;
+}
+
+body.rtl-mode .admin-user-details {
+  text-align: left;
+}
+
+.admin-user-email {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-cream);
+}
+
+.admin-user-role {
+  font-size: 0.75rem;
+  color: var(--color-gold-light);
+}
+
+/* Dashboard Container */
+.admin-dashboard-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  flex: 1;
+}
+
+/* Admin Sidebar */
+.admin-sidebar {
+  background-color: var(--color-white);
+  border-right: 1px solid var(--color-border);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+body.rtl-mode .admin-sidebar {
+  border-right: none;
+  border-left: 1px solid var(--color-border);
+}
+
+.admin-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1.15rem;
+  border-radius: var(--radius-md);
+  color: #4B5563;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all var(--transition-fast);
+}
+
+.admin-nav-item:hover {
+  background-color: var(--color-cream);
+  color: var(--color-primary-dark);
+}
+
+.admin-nav-item.active {
+  background-color: var(--color-primary);
+  color: var(--color-gold);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Admin Content Panel */
+.admin-main-panel {
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.admin-tab-section {
+  display: none;
+}
+
+.admin-tab-section.active {
+  display: block;
+}
+
+/* Overview Stat Cards */
+.stats-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.stat-metric-card {
+  background-color: var(--color-white);
+  padding: 1.75rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-metric-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.stat-metric-val {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  font-family: var(--font-heading);
+}
+
+/* Tables in Admin */
+.admin-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.admin-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.admin-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+body.rtl-mode .admin-table {
+  text-align: right;
+}
+
+.admin-table th {
+  background-color: #F9FAFB;
+  padding: 0.85rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6B7280;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.admin-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+.order-code {
+  font-family: monospace;
+  font-size: 0.95rem;
+  color: var(--color-primary);
+}
+
+.table-badge {
+  display: inline-block;
+  background-color: var(--color-cream);
+  border: 1px solid var(--color-gold);
+  color: var(--color-primary-dark);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.customer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-name {
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+.customer-phone {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+}
+
+.status-select {
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 700;
+  border: 1px solid transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.status-select.status-pending {
+  background-color: #FEF3C7;
+  color: #92400E;
+  border-color: #FCD34D;
+}
+
+.status-select.status-preparing {
+  background-color: #E0E7FF;
+  color: #3730A3;
+  border-color: #A5B4FC;
+}
+
+.status-select.status-ready {
+  background-color: #D1FAE5;
+  color: #065F46;
+  border-color: #6EE7B7;
+}
+
+.status-select.status-completed {
+  background-color: #DCFCE7;
+  color: #166534;
+  border-color: #86EFAC;
+}
+
+.status-select.status-cancelled {
+  background-color: #FEE2E2;
+  color: #991B1B;
+  border-color: #FCA5A5;
+}
+
+.btn-icon {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0.25rem;
+}
+
+/* Menu Management View */
+.admin-thumb {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+.category-tag {
+  background-color: var(--color-cream);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.btn-toggle-avail {
+  border: none;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-toggle-avail.is-avail {
+  background-color: #DCFCE7;
+  color: #166534;
+}
+
+.btn-toggle-avail.is-unavail {
+  background-color: #FEE2E2;
+  color: #991B1B;
+}
+
+.btn-group-sm {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-sm {
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-white);
+}
+
+.btn-sm.btn-edit-dish:hover {
+  background-color: var(--color-primary);
+  color: var(--color-gold);
+}
+
+.btn-sm.btn-delete-dish:hover {
+  background-color: var(--color-danger);
+  color: #FFF;
+  border-color: var(--color-danger);
+}
+
+/* QR Code Section */
+.qr-admin-box {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  padding: 3rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.qr-code-wrapper {
+  margin: 1.5rem auto;
+  display: inline-block;
+  padding: 1rem;
+  background-color: #FFF;
+  border: 2px solid var(--color-gold);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.qr-code-image {
+  display: block;
+}
+
+.qr-url-caption {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  font-family: monospace;
+  word-break: break-all;
+  margin-top: 0.75rem;
+}
+
+/* Auth Guard Container */
+.auth-guard-box {
+  max-width: 480px;
+  margin: 80px auto;
+  background-color: var(--color-white);
+  padding: 3rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.auth-guard-icon {
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+  color: var(--color-gold);
+}

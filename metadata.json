@@ -1,0 +1,6 @@
+{
+  "name": "Sharjah Hotel Yaru",
+  "description": "Authentic Pakistani Restaurant in Yaru, Pishin, Balochistan. Featuring traditional Karahi, BBQ, Breakfast, digital QR menu, and online table ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sharjah Hotel Yaru - Authentic Pakistani Restaurant in Pishin</title>
+  <meta name="description" content="Sharjah Hotel Yaru - Authentic Pakistani Restaurant in Yaru, Pishin, Balochistan. Featuring traditional Shinwari Karahi, Charcoal BBQ, and digital QR menu." />
+  <meta property="og:title" content="Sharjah Hotel Yaru - Authentic Pakistani Restaurant in Pishin" />
+  <meta property="og:description" content="Experience authentic Shinwari Karahi, Charcoal BBQ, and fresh Tandoori Naan at Sharjah Hotel Yaru, Pishin." />
+  <meta property="og:type" content="restaurant" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍲</text></svg>" />
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/menu.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+</head>
+<body class="ltr-mode">
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo" aria-label="Sharjah Hotel Home">
+        <span class="brand-title" data-i18n="brandName">SHARJAH HOTEL</span>
+        <span class="brand-sub" data-i18n="subBrand">YARU • PISHIN</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active" data-i18n="navHome">Home</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="navAbout">About Us</a></li>
+          <li><a href="menu.html" class="nav-link" data-i18n="navMenu">Digital Menu</a></li>
+          <li><a href="gallery.html" class="nav-link" data-i18n="navGallery">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
+          <li><a href="admin.html" class="nav-link" data-i18n="navAdmin">Admin</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions & Language Switcher -->
+      <div class="nav-actions">
+        <!-- 3-Language Selector -->
+        <div class="lang-selector-group" data-lang-select aria-label="Language Selector">
+          <button type="button" class="lang-btn active-lang" data-lang-btn="en">EN</button>
+          <button type="button" class="lang-btn" data-lang-btn="ur">اردو</button>
+          <button type="button" class="lang-btn" data-lang-btn="ps">پښتو</button>
+        </div>
+
+        <!-- Cart Nav Button -->
+        <button type="button" class="btn-cart-nav" data-toggle-cart aria-label="View Shopping Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count-badge" style="display: none;">0</span>
+        </button>
+
+        <a href="menu.html" class="btn btn-gold" data-i18n="btnViewMenu">View Menu</a>
+
+        <!-- Hamburger Icon -->
+        <button type="button" class="mobile-nav-toggle" id="mobileMenuToggle" aria-label="Open Navigation Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavMenu" aria-label="Mobile Navigation">
+    <div class="brand-logo">
+      <span class="brand-title" data-i18n="brandName">SHARJAH HOTEL</span>
+      <span class="brand-sub" data-i18n="subBrand">YARU • PISHIN</span>
+    </div>
+
+    <!-- Mobile Language Selector -->
+    <div class="lang-selector-group" data-lang-select style="margin-top: 1.5rem;">
+      <button type="button" class="lang-btn active-lang" data-lang-btn="en">EN</button>
+      <button type="button" class="lang-btn" data-lang-btn="ur">اردو</button>
+      <button type="button" class="lang-btn" data-lang-btn="ps">پښتو</button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link active" data-i18n="navHome">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link" data-i18n="navAbout">About Us</a></li>
+      <li><a href="menu.html" class="mobile-nav-link" data-i18n="navMenu">Digital Menu</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link" data-i18n="navGallery">Gallery</a></li>
+      <li><a href="contact.html" class="mobile-nav-link" data-i18n="navContact">Contact</a></li>
+      <li><a href="admin.html" class="mobile-nav-link" data-i18n="navAdmin">Admin</a></li>
+    </ul>
+
+    <div style="margin-top: auto; padding-top: 1.5rem;">
+      <a href="tel:03016372561" class="btn btn-outline-gold" style="width: 100%;" data-i18n="btnCallNow">Call 0301 6372561</a>
+    </div>
+  </aside>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <span data-i18n="heroTag">Authentic Balochi & Pakistani Cuisine</span>
+      </span>
+
+      <h1 class="hero-title" data-i18n="heroTitle">Experience the Taste of Tradition</h1>
+      <p class="hero-subtitle" data-i18n="heroSubtitle">
+        Authentic Pakistani Flavours in the Heart of Yaru. Fresh Shinwari Karahi, succulent Charcoal BBQ, and steaming tandoori naan made to order.
+      </p>
+
+      <div class="hero-actions">
+        <a href="menu.html" class="btn btn-gold" data-i18n="btnExploreMenu">Explore Our Menu</a>
+        <a href="tel:03016372561" class="btn btn-outline-gold" data-i18n="btnCallNow">Call 0301 6372561</a>
+      </div>
+
+      <p class="hero-note" data-i18n="heroPriceNotice">Sample prices shown for demonstration</p>
+    </div>
+  </section>
+
+  <!-- Stats & Operating Highlights Bar -->
+  <section class="stats-banner">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <div class="stat-icon">⭐</div>
+        <div>
+          <div class="stat-title" data-i18n="statRatingCount">423 Google Reviews</div>
+          <div class="stat-desc" data-i18n="statReviewsSub">Real local diners in Pishin & Yaru</div>
+        </div>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-icon">🕒</div>
+        <div>
+          <div class="stat-title" data-i18n="statTimings">Open till 2:00 AM</div>
+          <div class="stat-desc" data-i18n="statTimingsSub">Late night hot dinners & tea</div>
+        </div>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-icon">🌿</div>
+        <div>
+          <div class="stat-title" data-i18n="statAtmosphere">Outdoor & Family Seating</div>
+          <div class="stat-desc" data-i18n="statAtmosphereSub">Traditional setup with charpai & tables</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section-py bg-cream" id="about">
+    <div class="container about-grid">
+      <div class="about-media-stack">
+        <img 
+          src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=800&q=80" 
+          alt="Fresh Cooking at Sharjah Hotel Yaru" 
+          class="about-img-main" 
+          loading="lazy"
+        />
+        <div class="about-floating-card">
+          <strong>YARU, PISHIN</strong>
+          <span data-i18n="infoLocationVal">Yaru, Pishin, Balochistan, Pakistan</span>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <span class="section-tag" data-i18n="aboutTag">Our Heritage & Passion</span>
+        <h2 class="section-title" data-i18n="aboutTitle">A Beloved Culinary Landmark in Yaru, Pishin</h2>
+        
+        <p data-i18n="aboutText1">
+          Sharjah Hotel Yaru is a renowned local Pakistani restaurant proudly serving travelers, families, and food lovers along the National Highway in Yaru, District Pishin, Balochistan.
+        </p>
+        <p data-i18n="aboutText2">
+          From fresh tender mutton cooked in natural tallow to fiery iron-wok chicken karahis and fragrant biryani, we honor authentic roadside culinary traditions with genuine warmth, generous portions, and unmatched freshness.
+        </p>
+
+        <ul class="about-features-list">
+          <li class="about-feature-item">
+            <span class="feature-check">✔</span>
+            <span data-i18n="aboutFeature1">Fresh slaughtered meat & live iron-wok cooking</span>
+          </li>
+          <li class="about-feature-item">
+            <span class="feature-check">✔</span>
+            <span data-i18n="aboutFeature2">Special late-night service closing at 2:00 AM</span>
+          </li>
+          <li class="about-feature-item">
+            <span class="feature-check">✔</span>
+            <span data-i18n="aboutFeature3">Welcoming mountain hospitality for every guest</span>
+          </li>
+        </ul>
+
+        <a href="menu.html" class="btn btn-dark" data-i18n="btnViewMenu">View Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Dishes Section -->
+  <section class="section-py bg-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="specialsTag">House Specialties</span>
+        <h2 class="section-title" data-i18n="specialsTitle">Signature Tastes You Must Try</h2>
+        <p class="section-subtitle" data-i18n="specialsSubtitle">
+          Freshly prepared to order using local spices and traditional techniques.
+        </p>
+      </div>
+
+      <div class="specials-grid">
+        <!-- Special 1 -->
+        <article class="food-card">
+          <div class="food-card-media">
+            <img src="https://images.unsplash.com/photo-1545247181-516773ca838b?auto=format&fit=crop&w=700&q=80" alt="Shinwari Mutton Karahi" class="food-card-img" />
+            <span class="category-badge">Karahi</span>
+            <span class="status-badge badge-available">Available</span>
+          </div>
+          <div class="food-card-content">
+            <div class="food-card-header">
+              <h3 class="food-card-title">Shinwari Mutton Karahi</h3>
+              <div class="food-card-price">Rs. 3,000</div>
+            </div>
+            <p class="food-card-desc">Pishin mountain goat braised in its own natural fat with coarse salt and green chillies.</p>
+            <div class="food-card-footer">
+              <span class="price-sample-tag">Per 1kg Wok</span>
+              <a href="menu.html" class="btn-add-cart"><span>View in Menu</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Special 2 -->
+        <article class="food-card">
+          <div class="food-card-media">
+            <img src="https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=700&q=80" alt="Chicken Tikka" class="food-card-img" />
+            <span class="category-badge">BBQ</span>
+            <span class="status-badge badge-available">Available</span>
+          </div>
+          <div class="food-card-content">
+            <div class="food-card-header">
+              <h3 class="food-card-title">Chicken Tikka (Chest)</h3>
+              <div class="food-card-price">Rs. 450</div>
+            </div>
+            <p class="food-card-desc">Succulent quarter chicken marinated in Balochi herbs and char-grilled over open coals.</p>
+            <div class="food-card-footer">
+              <span class="price-sample-tag">Quarter Chicken</span>
+              <a href="menu.html" class="btn-add-cart"><span>View in Menu</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Special 3 -->
+        <article class="food-card">
+          <div class="food-card-media">
+            <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=700&q=80" alt="Kabuli Pulao Mutton" class="food-card-img" />
+            <span class="category-badge">Rice & Biryani</span>
+            <span class="status-badge badge-available">Available</span>
+          </div>
+          <div class="food-card-content">
+            <div class="food-card-header">
+              <h3 class="food-card-title">Kabuli Pulao Mutton</h3>
+              <div class="food-card-price">Rs. 1,100</div>
+            </div>
+            <p class="food-card-desc">Aromatic rice topped with sweet carrots, raisins, and slow-braised mountain mutton shank.</p>
+            <div class="food-card-footer">
+              <span class="price-sample-tag">Special Platter</span>
+              <a href="menu.html" class="btn-add-cart"><span>View in Menu</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Special 4 -->
+        <article class="food-card">
+          <div class="food-card-media">
+            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=700&q=80" alt="Claypot Chicken Handi" class="food-card-img" />
+            <span class="category-badge">Karahi</span>
+            <span class="status-badge badge-available">Available</span>
+          </div>
+          <div class="food-card-content">
+            <div class="food-card-header">
+              <h3 class="food-card-title">Claypot Chicken Handi</h3>
+              <div class="food-card-price">Rs. 1,700</div>
+            </div>
+            <p class="food-card-desc">Boneless chicken slow-cooked in a terracotta pot with butter, cream, and roasted coriander.</p>
+            <div class="food-card-footer">
+              <span class="price-sample-tag">Clay Pot Serving</span>
+              <a href="menu.html" class="btn-add-cart"><span>View in Menu</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="menu.html" class="btn btn-gold" data-i18n="btnExploreMenu">Explore Complete 50+ Dish Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section-py bg-cream">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="whyTag">Why Diners Choose Us</span>
+        <h2 class="section-title" data-i18n="whyTitle">Authentic Hospitality & Uncompromising Taste</h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">🍛</div>
+          <h3 class="why-title" data-i18n="why1Title">Authentic Pakistani Food</h3>
+          <p class="why-desc" data-i18n="why1Desc">
+            Original recipes honed with fresh whole spices, slow simmering, and authentic desi wok methods.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">🥩</div>
+          <h3 class="why-title" data-i18n="why2Title">Delicious Traditional Dishes</h3>
+          <p class="why-desc" data-i18n="why2Desc">
+            Famous for savory Shinwari mutton karahi, slow-roasted mutton pieces, and golden crisp tandoori naan.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">🌌</div>
+          <h3 class="why-title" data-i18n="why3Title">Outdoor Seating</h3>
+          <p class="why-desc" data-i18n="why3Desc">
+            Open-air dining under starry Balochistan skies, featuring spacious traditional seating and cozy tables.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">✨</div>
+          <h3 class="why-title" data-i18n="why4Title">All You Can Eat</h3>
+          <p class="why-desc" data-i18n="why4Desc">
+            Hearty dining portions that guarantee your appetite is fully satisfied with warmth and genuine care.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews Proof Section -->
+  <section class="section-py bg-white">
+    <div class="container">
+      <div class="reviews-box">
+        <div>
+          <span class="google-verified-tag">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            Google Business Listing Verified
+          </span>
+          <div class="reviews-badge-count">423</div>
+          <h2 style="color: var(--color-cream); font-family: var(--font-heading); font-size: 1.85rem; margin-bottom: 0.75rem;" data-i18n="reviewsTitle">
+            Trusted by Locals & Travelers
+          </h2>
+          <p style="color: #D3D8D3; font-size: 1.05rem; line-height: 1.6; margin-bottom: 1.5rem;" data-i18n="reviewsText">
+            Sharjah Hotel Yaru is recognized on Google Maps with 423 authentic customer reviews from diners across Balochistan and travelers along the highway.
+          </p>
+          <a 
+            href="https://www.google.com/search?q=Sharjah+Hotel+Pishin" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn btn-gold"
+            data-i18n="btnGoogleReviews">
+            View 423 Google Reviews
+          </a>
+        </div>
+
+        <div style="background-color: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: var(--radius-md); border: 1px solid rgba(212, 168, 83, 0.25);">
+          <h4 style="color: var(--color-gold); font-size: 1.1rem; margin-bottom: 1rem;">Business Profile Snapshot</h4>
+          <p style="color: #ECEAE4; font-size: 0.95rem; margin-bottom: 0.5rem;"><strong>Business Name:</strong> Sharjah Hotel Yaru</p>
+          <p style="color: #ECEAE4; font-size: 0.95rem; margin-bottom: 0.5rem;"><strong>Category:</strong> Pakistani Restaurant</p>
+          <p style="color: #ECEAE4; font-size: 0.95rem; margin-bottom: 0.5rem;"><strong>Location:</strong> Yaru, Pishin, Balochistan</p>
+          <p style="color: #ECEAE4; font-size: 0.95rem; margin-bottom: 0.5rem;"><strong>Closing Hours:</strong> Open, closes at 2:00 AM</p>
+          <p style="color: #ECEAE4; font-size: 0.95rem;"><strong>Price per person:</strong> Rs. 2,000–3,000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location Section -->
+  <section class="section-py bg-cream" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="contactTag">Find & Visit Us</span>
+        <h2 class="section-title" data-i18n="contactTitle">Drop By for a Memorable Meal</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-card-icon">📞</div>
+          <div class="contact-card-label" data-i18n="infoPhone">Phone Number</div>
+          <div class="contact-card-val"><a href="tel:03016372561">0301 6372561</a></div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon">📍</div>
+          <div class="contact-card-label" data-i18n="infoLocation">Location</div>
+          <div class="contact-card-val" data-i18n="infoLocationVal">Yaru, Pishin, Balochistan</div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon">🕒</div>
+          <div class="contact-card-label" data-i18n="infoHours">Operating Hours</div>
+          <div class="contact-card-val" data-i18n="infoHoursVal">Open, Closes at 2:00 AM</div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon">💳</div>
+          <div class="contact-card-label" data-i18n="infoPrice">Listed Price Per Person</div>
+          <div class="contact-card-val" data-i18n="infoPriceVal">Rs. 2,000–3,000</div>
+        </div>
+      </div>
+
+      <div style="background-color: var(--color-white); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem;">
+        <div>
+          <h4 style="font-size: 1.15rem; color: var(--color-primary-dark); margin-bottom: 0.35rem;" data-i18n="infoServices">Service Options</h4>
+          <p style="color: var(--color-muted); font-size: 0.95rem;" data-i18n="infoServicesVal">Cash Only • All You Can Eat • Outdoor Seating</p>
+        </div>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="tel:03016372561" class="btn btn-gold" data-i18n="btnCallNow">Call 0301 6372561</a>
+          <a 
+            href="https://www.google.com/maps/search/Sharjah+Hotel+Yaru+Pishin" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn btn-outline-gold"
+            data-i18n="btnGetDirections">
+            Open in Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shopping Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Order Cart Drawer">
+    <div class="cart-drawer-header">
+      <h3 class="cart-drawer-title" data-i18n="cartTitle">Your Table Order</h3>
+      <button type="button" class="cart-drawer-close" data-close-cart aria-label="Close Cart">✕</button>
+    </div>
+
+    <div class="cart-items-body">
+      <!-- Empty state -->
+      <div id="cartEmptyState" style="text-align: center; padding: 3rem 1rem; display: flex; flex-direction: column; align-items: center;">
+        <span style="font-size: 3rem; margin-bottom: 1rem;">🛒</span>
+        <h4 style="color: var(--color-primary-dark); margin-bottom: 0.5rem;" data-i18n="cartEmptyTitle">Your cart is currently empty</h4>
+        <p style="color: var(--color-muted); font-size: 0.85rem;" data-i18n="cartEmptyDesc">
+          Explore our rich menu and tap 'Add to Order' to begin your dining experience.
+        </p>
+      </div>
+
+      <!-- Cart items container -->
+      <div id="cartItemsList"></div>
+    </div>
+
+    <div class="cart-drawer-footer" id="cartFooter" style="display: none;">
+      <div class="cart-total-row">
+        <span data-i18n="cartTotal">Grand Total</span>
+        <span class="cart-total-val text-gold">Rs. 0</span>
+      </div>
+      <p class="cart-cash-note" data-i18n="cartTaxNote">Cash payment upon serving at your table</p>
+
+      <div style="display: flex; gap: 0.5rem;">
+        <button type="button" class="btn btn-gold" id="btnOpenCheckout" style="flex: 1;" data-i18n="btnProceedCheckout">Proceed to Order</button>
+        <button type="button" class="btn btn-sm" id="btnClearCart" title="Clear Cart" data-i18n="btnClearCart">Clear</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Checkout Table Modal -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal-box">
+      <button type="button" class="modal-close-btn" data-close-checkout aria-label="Close modal">✕</button>
+      <h3 style="font-family: var(--font-heading); color: var(--color-primary-dark); font-size: 1.5rem; margin-bottom: 0.5rem;" data-i18n="checkoutTitle">
+        Confirm Table Details
+      </h3>
+      <p style="font-size: 0.85rem; color: var(--color-muted); margin-bottom: 1.5rem;" data-i18n="orderNotice">
+        Note: Sharjah Hotel Yaru accepts Cash Only. Orders are confirmed immediately by floor staff.
+      </p>
+
+      <form id="orderCheckoutForm">
+        <div class="form-group">
+          <label class="form-label" data-i18n="lblCustomerName">Your Full Name *</label>
+          <input type="text" name="customerName" class="form-control" required placeholder="e.g., Muhammad Khan" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" data-i18n="lblPhone">Mobile Phone Number *</label>
+          <input type="tel" name="phone" class="form-control" required value="0301 6372561" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" data-i18n="lblTableNumber">Table / Seating Area *</label>
+          <input type="text" name="tableNumber" class="form-control" required placeholder="Table 4 / Charpai Area 2" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" data-i18n="lblSpecialInstructions">Cooking Instructions</label>
+          <textarea name="instructions" class="form-control" rows="2" placeholder="e.g., Medium spice, well done naan, extra mint raita"></textarea>
+        </div>
+
+        <div style="background-color: var(--color-cream); padding: 1rem; border-radius: var(--radius-md); margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-weight: 700; color: var(--color-primary-dark);" data-i18n="cartTotal">Grand Total:</span>
+          <strong class="cart-total-val text-gold" style="font-size: 1.25rem;">Rs. 0</strong>
+        </div>
+
+        <button type="submit" class="btn btn-gold" style="width: 100%;" data-i18n="btnConfirmOrder">
+          Submit Order to Kitchen
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Order Confirmation Success Modal -->
+  <div class="modal-overlay" id="orderSuccessModal">
+    <div class="modal-box" style="text-align: center;">
+      <div class="success-checkmark-box">✓</div>
+      <h3 style="font-family: var(--font-heading); color: var(--color-primary-dark); font-size: 1.6rem; margin-bottom: 0.5rem;" data-i18n="orderSuccessTitle">
+        Order Placed Successfully!
+      </h3>
+      <p style="color: var(--color-muted); font-size: 0.95rem; margin-bottom: 1.25rem;" data-i18n="orderSuccessMsg">
+        Your order has been sent to our live kitchen. Staff will attend your table shortly.
+      </p>
+
+      <span class="order-code-badge" id="successOrderNumber">SHY-ORD-0000</span>
+
+      <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+        <button type="button" class="btn btn-gold" data-close-success data-i18n="btnTrackAnother">Order More Dishes</button>
+        <button type="button" class="btn btn-sm" data-close-success data-i18n="btnCloseModal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Toast -->
+  <div class="cart-toast" id="cartToast">
+    <span>🍲</span>
+    <div>
+      <div class="toast-title" style="font-weight: 700; color: var(--color-gold);">Dish Added</div>
+      <div style="font-size: 0.8rem; color: #BBB;">Added to your table order</div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="brand-title" style="color: var(--color-gold); font-size: 1.4rem;">SHARJAH HOTEL YARU</span>
+        <p class="footer-desc" data-i18n="footerDesc">
+          Sharjah Hotel Yaru brings authentic Balochi and Pakistani hospitality to your table. Renowned for Shinwari Karahi, charcoal BBQ, and refreshing green tea.
+        </p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-col-title" data-i18n="footerLinks">Quick Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" data-i18n="navHome">Home</a></li>
+          <li><a href="menu.html" data-i18n="navMenu">Digital Menu</a></li>
+          <li><a href="gallery.html" data-i18n="navGallery">Gallery</a></li>
+          <li><a href="contact.html" data-i18n="navContact">Contact</a></li>
+          <li><a href="admin.html" data-i18n="navAdmin">Admin Portal</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h4 class="footer-col-title" data-i18n="footerContact">Hotel Information</h4>
+        <p style="margin-bottom: 0.5rem;">📍 Yaru, Pishin, Balochistan</p>
+        <p style="margin-bottom: 0.5rem;">📞 <a href="tel:03016372561" style="color: var(--color-gold);">0301 6372561</a></p>
+        <p style="margin-bottom: 0.5rem;">🕒 Open, Closes at 2:00 AM</p>
+        <p>💵 Cash Only • Outdoor Seating</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p data-i18n="footerRights">© Sharjah Hotel Yaru. All rights reserved. Built for demonstration.</p>
+      <p>Demonstration Website for Hotel Owner Presentation</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="/js/language.js"></script>
+  <script type="module" src="/js/cart.js"></script>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

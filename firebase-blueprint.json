@@ -1,0 +1,91 @@
+{
+  "entities": {
+    "MenuItem": {
+      "title": "MenuItem",
+      "description": "A food or drink dish offered by Sharjah Hotel Yaru",
+      "type": "object",
+      "properties": {
+        "nameEn": { "type": "string", "description": "English name of the dish", "maxLength": 100 },
+        "nameUr": { "type": "string", "description": "Urdu name of the dish", "maxLength": 100 },
+        "namePs": { "type": "string", "description": "Pashto name of the dish", "maxLength": 100 },
+        "descriptionEn": { "type": "string", "description": "English description", "maxLength": 500 },
+        "descriptionUr": { "type": "string", "description": "Urdu description", "maxLength": 500 },
+        "descriptionPs": { "type": "string", "description": "Pashto description", "maxLength": 500 },
+        "price": { "type": "number", "description": "Price in Pakistani Rupees" },
+        "category": { "type": "string", "description": "Category ID or name", "maxLength": 50 },
+        "image": { "type": "string", "description": "Image URL of the dish", "maxLength": 500 },
+        "available": { "type": "boolean", "description": "Whether the dish is currently available" },
+        "createdAt": { "type": "string", "description": "Creation timestamp" }
+      },
+      "required": ["nameEn", "price", "category", "available"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "Customer dine-in or takeaway order",
+      "type": "object",
+      "properties": {
+        "orderNumber": { "type": "string", "description": "Unique human-readable order number", "maxLength": 32 },
+        "customerName": { "type": "string", "description": "Customer name", "maxLength": 100 },
+        "phone": { "type": "string", "description": "Customer phone number", "maxLength": 30 },
+        "tableNumber": { "type": "string", "description": "Table number or Dining Area", "maxLength": 30 },
+        "items": { "type": "array", "description": "List of ordered items with quantities and prices" },
+        "subtotal": { "type": "number", "description": "Order subtotal in PKR" },
+        "total": { "type": "number", "description": "Grand total in PKR" },
+        "instructions": { "type": "string", "description": "Special cooking/serving requests", "maxLength": 500 },
+        "status": {
+          "type": "string",
+          "description": "Order lifecycle status",
+          "enum": ["Pending", "Preparing", "Ready", "Completed", "Cancelled"]
+        },
+        "createdAt": { "type": "string", "description": "Order creation timestamp" }
+      },
+      "required": ["orderNumber", "customerName", "phone", "items", "total", "status"]
+    },
+    "RestaurantSettings": {
+      "title": "RestaurantSettings",
+      "description": "Sharjah Hotel Yaru business configuration and operating details",
+      "type": "object",
+      "properties": {
+        "hotelName": { "type": "string", "description": "Official hotel name", "maxLength": 100 },
+        "phone": { "type": "string", "description": "Contact phone number", "maxLength": 30 },
+        "location": { "type": "string", "description": "Physical location description", "maxLength": 200 },
+        "openingHours": { "type": "string", "description": "Opening hours string", "maxLength": 50 },
+        "closingHours": { "type": "string", "description": "Closing hours string", "maxLength": 50 },
+        "priceRange": { "type": "string", "description": "Listed price per person", "maxLength": 50 },
+        "services": { "type": "array", "description": "Array of service badges" },
+        "currency": { "type": "string", "description": "Currency abbreviation", "maxLength": 10 },
+        "updatedAt": { "type": "string", "description": "Last updated timestamp" }
+      },
+      "required": ["hotelName", "phone", "location"]
+    },
+    "AdminUser": {
+      "title": "AdminUser",
+      "description": "Authorized administrator record for Sharjah Hotel Yaru",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string", "description": "Administrator email address", "maxLength": 120 },
+        "role": { "type": "string", "description": "Admin authorization role", "enum": ["admin", "superadmin"] },
+        "addedAt": { "type": "string", "description": "Timestamp when admin was added" }
+      },
+      "required": ["email", "role"]
+    }
+  },
+  "firestore": {
+    "/menuItems/{menuItemId}": {
+      "schema": { "$ref": "#/entities/MenuItem" },
+      "description": "Food items catalog for digital menu"
+    },
+    "/orders/{orderId}": {
+      "schema": { "$ref": "#/entities/Order" },
+      "description": "Customer orders submitted from table QR or web menu"
+    },
+    "/settings/{settingId}": {
+      "schema": { "$ref": "#/entities/RestaurantSettings" },
+      "description": "Business settings, timings, and contact numbers"
+    },
+    "/admins/{adminId}": {
+      "schema": { "$ref": "#/entities/AdminUser" },
+      "description": "Admin users list allowed to manage menu, orders, and settings"
+    }
+  }
+}
